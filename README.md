@@ -7,7 +7,7 @@ I tried to convert OTA xsd files to java classes then to use ModelMapper to conv
 Github issue: https://github.com/modelmapper/modelmapper/issues/212
 Stackoverflow issue: http://stackoverflow.com/questions/43115191/java-modelmapper-does-not-compile-data-in-nested-collection-lists
 
-In order to solve this problem you just have to add following configuration:
+In order to solve this problem you just have to add the following configuration:
 ```javascript
 modelMapper.getConfiguration().setFieldMatchingEnabled(true);
 modelMapper.getConfiguration().setFieldAccessLevel(AccessLevel.PROTECTED);
